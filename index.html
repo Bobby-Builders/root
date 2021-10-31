@@ -3,7 +3,22 @@ Bobby Navaja's Official Website
 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  .glow {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px blue, 0 0 40px blue, 0 0 50px blue, 0 0 60px blue, 0 0 70px blue;
+  }
   
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px skyblue, 0 0 40px skyblue, 0 0 50px skyblue, 0 0 60px skyblue, 0 0 70px skyblue, 0 0 80px skyblue;
+  }
+}
 .overlay {
   height: 0%;
   width: 100%;
@@ -215,8 +230,8 @@ a{ text-decoration:none; color: black; font-size:20px; font-family:gulim; margin
     <a href="files.html" class="a">View Files</a>
   </div>
 </div>
-<h1 style="color:blue; margin-top:300px; border-radius:10px; padding:2px 2px 2px 2px; ">Bobby Navaja's Official Website </h1>
-<script>
+<h1 style="margin-top:300px;" class="glow">Bobby Navaja's website</h1>
+  <script>
 function openNavsam() {
   document.getElementById("myNavsam").style.height = "100%";
 }
